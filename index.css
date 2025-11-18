@@ -3,17 +3,23 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-/* Navigation Bar  */
+.line{
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    background: linear-gradient(90deg, #fc8019, #fca326, #ffcb6b);
+}
+/* Navigation Bar CSS */
 .nav{
     box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
     background-color: #ffffff;
-    z-index: 100;
-    padding: 0 20px;
+    z-index: 1000;
+    padding: 0 50px;
 }
 .navbar .nav{
     max-width: 1200px;
@@ -33,7 +39,7 @@
     display: block;
     height: 80px;
     width: 90px;
-    margin-right: 16px;
+    margin-right: 21px;
     transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 #logo:hover{
@@ -110,11 +116,495 @@
     text-decoration: none;
     color: #3d4152;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .items .nav-item a:hover{
+    border-bottom: 1px solid black;
     color: #fc8019;
 }
 .nav-item a span{
     padding-left: 11px;
+}
+/* First Page CSS */
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* INTRO SECTION */
+.intro-section {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+}
+
+/* Left side text area */
+.intro-text {
+  width: 50%;
+}
+
+/* Tagline */
+.intro-tagline {
+  font-family: 'Dancing Script', cursive;
+  color: #3bb14a;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Main heading */
+.intro-heading {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Highlighted yellow text */
+.intro-heading span {
+  font-family: 'Dancing Script', cursive;
+  color: #f4c400;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+/* Description */
+.intro-description {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Button */
+.intro-button {
+  background-color: #f4c400;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Button hover effect */
+.intro-button:hover {
+  background-color: #ffd633;
+}
+
+/* Feature list */
+.intro-features {
+  display: flex;
+  gap: 20px;
+  color: #3d3d3d;
+  font-size: 18px;
+}
+
+/* Right side image */
+.intro-image {
+  width: 50%;
+  position: relative;
+}
+
+/* Image container */
+.image-box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Main image */
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Rating box */
+.image-rating {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-rating h3 {
+  color: #f4c400;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.image-rating p {
+  color: #666666;
+  font-size: 12px;
+}
+
+/* Customer box */
+.image-customers {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-customers h3 {
+  color: #f4c400;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.image-customers p {
+  color: #666666;
+  font-size: 13px;
+}
+/* Second page CSS */
+.second-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  background: linear-gradient(180deg, #ffffff, #f5f5f5);
+  padding: 100px 80px;
+  flex-wrap: wrap;
+}
+/* Food Image */
+.food-img {
+  height: 500px;
+  width: 45%;
+  background-image: url(second.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+}
+
+.food-img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  gap: 60px;
+}
+.second-heading {
+  font-size: 38px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+.second-heading span {
+  color: #f9ce10;
+}
+.second-heading::after {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #f4c400;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.second-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 480px;
+  margin-top: 10px;
+}
+
+/* Third page CSS */
+/* --- Section Layout --- */
+.cook-section {
+  background-color: #111; 
+  color: #fff;
+  text-align: center;
+  padding: 100px 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cook-title {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.cook-title span {
+  color: #f6d54f; 
+}
+.cook-image {
+  position: relative;
+  background-image: url('cook-image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 800px;
+  margin: 0 auto 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cook-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.cook-subtitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.cook-description {
+  font-size: 18px;
+  color: #ddd;
+}
+.cook-features {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 30px;
+}
+
+.feature h4 {
+  color: #f6d54f;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #aaa;
+  font-size: 15px;
+}
+/* --- FOURTH PAGE: Modern Centered Overlapping Design --- */
+.fourth-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Each section */
+.slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+/* Alternate backgrounds */
+.white-bg {
+  background-color: #ffffff;
+}
+
+.peach-bg {
+  background-color: #fff4f0;
+}
+
+/* Centered layout inside each section */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 85%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Text area */
+.text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text h2 {
+  font-size: 42px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.text h4 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.cta-btn {
+  background-color: #fc2e1f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #d62217;
+}
+.image {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+}
+
+.image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease;
+}
+.image img:hover {
+  transform: scale(1.05);
+}
+.overlap {
+  margin-top: -150px;
+  z-index: 2;
+  padding-top: 200px;
+}
+.white-bg .image img {
+  position: relative;
+  right: -60px; 
+}
+
+.peach-bg .image img {
+  position: relative;
+  left: -60px; 
+  margin-top: -40px; 
+}
+.fifth-page {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  background-image: url('p5-i1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 600px;
+}
+
+.fifth-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grocery-content {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  max-width: 750px;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.grocery-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.grocery-content h4 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffe6c9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.grocery-content p {
+  font-size: 17px;
+  font-weight: 800;
+  color: #f2f2f2;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  letter-spacing: 0.3px;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.shop-btn {
+  background-color: #fc2e1f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 35px;
+  padding: 15px 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 20px rgba(252, 46, 31, 0.4);
+}
+.shop-btn:hover {
+  background-color: #d62217;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(214, 34, 23, 0.5);
 }
