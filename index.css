@@ -126,7 +126,6 @@
     padding-left: 11px;
 }
 /* First Page CSS */
-/* General reset */
 * {
   margin: 0;
   padding: 0;
@@ -140,7 +139,6 @@ body {
   color: #222222;
 }
 
-/* INTRO SECTION */
 .intro-section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -151,20 +149,15 @@ body {
   background-color: #f7f7f7;
 }
 
-/* Left side text area */
 .intro-text {
   width: 50%;
 }
-
-/* Tagline */
 .intro-tagline {
   font-family: 'Dancing Script', cursive;
   color: #3bb14a;
   font-size: 24px;
   margin-bottom: 20px;
 }
-
-/* Main heading */
 .intro-heading {
   font-size: 60px;
   font-weight: 800;
@@ -173,7 +166,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Highlighted yellow text */
 .intro-heading span {
   font-family: 'Dancing Script', cursive;
   color: #f4c400;
@@ -181,7 +173,6 @@ body {
   font-weight: 500;
 }
 
-/* Description */
 .intro-description {
   font-size: 18px;
   color: #666666;
@@ -189,7 +180,6 @@ body {
   max-width: 500px;
 }
 
-/* Button */
 .intro-button {
   background-color: #f4c400;
   color: #000000;
@@ -202,12 +192,10 @@ body {
   margin-bottom: 30px;
 }
 
-/* Button hover effect */
 .intro-button:hover {
   background-color: #ffd633;
 }
 
-/* Feature list */
 .intro-features {
   display: flex;
   gap: 20px;
@@ -215,13 +203,10 @@ body {
   font-size: 18px;
 }
 
-/* Right side image */
 .intro-image {
   width: 50%;
   position: relative;
 }
-
-/* Image container */
 .image-box {
   position: relative;
   border-radius: 20px;
@@ -229,14 +214,12 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Main image */
 .image-box img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Rating box */
 .image-rating {
   position: absolute;
   top: 15px;
@@ -259,7 +242,6 @@ body {
   font-size: 12px;
 }
 
-/* Customer box */
 .image-customers {
   position: absolute;
   bottom: 15px;
@@ -291,7 +273,6 @@ body {
   padding: 100px 80px;
   flex-wrap: wrap;
 }
-/* Food Image */
 .food-img {
   height: 500px;
   width: 45%;
@@ -347,7 +328,6 @@ body {
 }
 
 /* Third page CSS */
-/* --- Section Layout --- */
 .cook-section {
   background-color: #111; 
   color: #fff;
@@ -416,13 +396,11 @@ body {
   color: #aaa;
   font-size: 15px;
 }
-/* --- FOURTH PAGE: Modern Centered Overlapping Design --- */
 .fourth-page {
   width: 100%;
   overflow: hidden;
 }
 
-/* Each section */
 .slide {
   width: 100%;
   display: flex;
@@ -431,7 +409,6 @@ body {
   position: relative;
 }
 
-/* Alternate backgrounds */
 .white-bg {
   background-color: #ffffff;
 }
@@ -440,7 +417,6 @@ body {
   background-color: #fff4f0;
 }
 
-/* Centered layout inside each section */
 .content {
   display: flex;
   align-items: center;
