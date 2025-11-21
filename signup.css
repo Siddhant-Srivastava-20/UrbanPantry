@@ -42,8 +42,6 @@ body {
     background: #ffffff;
     text-align: center;
     color: #222;
-
-    /* Only this line keeps form scrollable */
     overflow-y: auto;
 }
 
@@ -119,4 +117,118 @@ body {
 .signup-text a:hover {
     color: #0c44d1;
     text-decoration: underline;
+}
+
+
+/* Big Phones */
+@media (max-width: 992px) {
+
+    body {
+        padding: 20px;
+        height: auto;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .img-box {
+        width: 100%;
+        height: 300px;
+    }
+
+    .login-box {
+        width: 100%;
+        padding: 35px 30px;
+    }
+
+    .login-box h2 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: none;
+    }
+
+    .img-box {
+        height: 220px;
+    }
+
+    .login-box {
+        padding: 25px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 22px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        font-size: 13px;
+    }
+
+    .input-group input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .signup-text {
+        font-size: 13px;
+    }
+}
+
+/* Small Phones  */
+@media (max-width: 400px) {
+
+    .login-box h2 {
+        font-size: 20px;
+    }
+
+    .img-box {
+        height: 180px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 9px;
+    }
+
+    .input-group input {
+        padding: 9px;
+        font-size: 13px;
+    }
 }

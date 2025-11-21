@@ -23,7 +23,7 @@
 }
 .navbar .nav{
     max-width: 1200px;
-    min-width: 1200px;
+    width: 100%;;
     position: relative;
     margin: 0 auto;
     height: 80px;
@@ -40,7 +40,7 @@
     height: 80px;
     width: 90px;
     margin-right: 21px;
-    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: transform 0.3s;
 }
 #logo:hover{
     transform: scale(1.1);
@@ -329,8 +329,7 @@ body {
 
 /* Third page CSS */
 .cook-section {
-  background-color: #111; 
-  color: #fff;
+  color: black;
   text-align: center;
   padding: 100px 50px;
   font-family: 'Poppins', sans-serif;
@@ -340,7 +339,7 @@ body {
   font-size: 40px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #fff;
+  color: #f6d54f;
   margin-bottom: 50px;
 }
 .cook-title span {
@@ -394,8 +393,10 @@ body {
 
 .feature p {
   color: #aaa;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
+/* Fourth Page */
 .fourth-page {
   width: 100%;
   overflow: hidden;
@@ -503,6 +504,7 @@ body {
   left: -60px; 
   margin-top: -40px; 
 }
+/* Fifth Page  */
 .fifth-page {
   position: relative;
   width: 100%;
@@ -515,7 +517,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-bottom: 600px;
 }
 
 .fifth-page .overlay {
@@ -584,3 +585,224 @@ body {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 10px 25px rgba(214, 34, 23, 0.5);
 }
+/* Footer */
+/* Footer*/
+.footer {
+    background: #111;
+    color: #ddd;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 23%;
+    min-width: 230px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    width: 130px;
+    margin-bottom: 15px;
+}
+
+.footer-about {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;
+}
+.footer-col h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    margin: 8px 0;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #ff5722;
+}
+.social-icons a {
+    font-size: 22px;
+    color: #ccc;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff5722;
+}
+.footer-line {
+    width: 90%;
+    margin: 20px auto;
+    border: 0.5px solid #333;
+}
+.footer-bottom {
+    text-align: center;
+    color: #aaa;
+    font-size: 14px;
+}
+/* Responsive wala code  */
+/* Tablets */
+@media (max-width: 992px) {
+
+  /* Navbar */
+  .nav {
+    padding: 0 20px;
+    min-width: 100%;
+  }
+  .right .items li {
+    margin-right: 18px;
+  }
+  #logo {
+    height: 70px;
+    width: 80px;
+  }
+  /* First Section */
+  .intro-section {
+    padding: 60px 40px;
+  }
+  .intro-text, .intro-image {
+    width: 100%;
+  }
+
+  .intro-heading {
+    font-size: 48px;
+  }
+  /* Second Page */
+  .second-page {
+    flex-direction: column;
+    padding: 80px 40px;
+  }
+  .food-img, .main-text {
+    width: 100%;
+  }
+  /* Third Page */
+  .cook-image {
+    width: 100%;
+    height: 350px;
+  }
+}
+/* Mobile */
+@media (max-width: 600px) {
+
+  /* Navbar */
+  .nav {
+    padding: 0 10px;
+  }
+  .right .items {
+    display: none; 
+  }
+
+  /* First Page */
+  .intro-section {
+    padding: 40px 20px;
+    flex-direction: column;
+  }
+  .intro-heading {
+    font-size: 35px;
+  }
+  .intro-description {
+    font-size: 16px;
+  }
+  .intro-features {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .image-box img {
+    border-radius: 18px;
+  }
+
+  /* Second Page */
+  .second-page {
+    padding: 60px 20px;
+  }
+  .second-heading {
+    font-size: 30px;
+  }
+  .second-description {
+    font-size: 16px;
+  }
+
+  /* Third Page */
+  .cook-title {
+    font-size: 28px;
+  }
+  .cook-image {
+    height: 280px;
+  }
+  .cook-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Fourth Page */
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .text h2 {
+    font-size: 30px;
+  }
+
+  /* Fifth Page */
+  .fifth-page {
+    height: 60vh;
+    margin-bottom: 300px;
+  }
+  .grocery-content h2 {
+    font-size: 34px;
+  }
+  .grocery-content h4 {
+    font-size: 16px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+  .intro-heading {
+    font-size: 28px;
+  }
+  .second-heading {
+    font-size: 26px;
+  }
+  .cook-title {
+    font-size: 24px;
+  }
+    .footer {
+        padding: 60px 0 30px;
+    }
+    .newsletter {
+        flex-direction: column;
+    }
+    .newsletter input,
+    .newsletter button {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+  }
