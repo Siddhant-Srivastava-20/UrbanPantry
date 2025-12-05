@@ -118,7 +118,11 @@ body {
     color: #0c44d1;
     text-decoration: underline;
 }
-
+.error-msg {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
 
 /* Big Phones */
 @media (max-width: 992px) {
