@@ -1,0 +1,121 @@
+body {
+  background: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.food-header {
+  text-align: center;
+  margin-top: 120px;
+  padding-bottom: 20px;
+}
+
+.food-header h1 {
+  font-size: 44px;
+  font-weight: 800;
+  color: #222;
+}
+
+.food-header p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 8px;
+}
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px;
+  padding: 40px 60px 80px;
+}
+.food-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.food-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-bottom: 1px solid #f1f1f1;
+}
+.food-body {
+  padding: 16px 18px 22px;
+}
+.food-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+.food-body .desc {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.45;
+  height: 38px;
+  overflow: hidden;
+}
+.food-body .price {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fc8019;
+}
+.add-cart-btn {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+
+  padding: 10px 0;
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #ff7a00, #ff5500);
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+.add-cart-btn:hover {
+  background: linear-gradient(135deg, #ff5500, #ff3300);
+  transform: translateY(-2px);
+}
+.add-cart-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 760px) {
+  .food-header h1 {
+    font-size: 32px;
+  }
+
+  .food-grid {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .food-card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-header h1 {
+    font-size: 28px;
+  }
+
+  .food-card img {
+    height: 150px;
+  }
+}

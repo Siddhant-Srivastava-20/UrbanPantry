@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UrbanPantry – Food Menu</title>
+
+  <!-- Navbar and global styling -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Food menu styling -->
+  <link rel="stylesheet" href="food.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <!-- Orange Gradient Line -->
+  <div class="line"></div>
+
+  <!-- NAVBAR START -->
+  <header class="navbar">
+    <div class="global-nav">
+      <div class="nav">
+
+        <div class="left">
+          <a href="index.html" class="logo">
+            <img src="logo_n.png" id="logo">
+          </a>
+
+          <div class="location-div">
+            <span class="Others">Others:</span>
+            <span class="location">Sonipat, Haryana, India</span>
+            <span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>
+          </div>
+        </div>
+
+        <div class="right">
+          <ul class="items">
+
+            <li>
+              <div class="nav-item">
+                <a href="">
+                  <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <span>Search</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <a href="">
+                  <span><i class="fa fa-gift"></i></span>
+                  <span>Offers</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <a href="help.html">
+                  <span><i class="fa-solid fa-clipboard-question"></i></span>
+                  <span>Help</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <a href="login.html">
+                  <span><i class="fa-solid fa-user-plus"></i></span>
+                  <span>Sign In</span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="nav-item">
+                <a href="">
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span>Cart</span>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- NAVBAR END -->
+
+
+  <!-- FOOD PAGE HEADER -->
+  <header class="food-header">
+    <h1>Explore Delicious Meals</h1>
+    <p>Choose from 50+ freshly prepared global dishes</p>
+  </header>
+
+
+  <!-- FOOD GRID START -->
+  <main>
+    <section class="food-grid">
+
+      <!-- ALL 50 FOOD CARDS WITH ADD TO CART BUTTON -->
+
+      <!-- 1 -->
+      <article class="food-card">
+        <img src="./food photos/f1.png" alt="Paneer Butter Masala">
+        <div class="food-body">
+          <h3>Paneer Butter Masala</h3>
+          <p class="desc">Soft paneer cubes simmered in a rich tomato-butter gravy.</p>
+          <p class="price">₹179</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="food-card">
+        <img src="./food photos/f2.jpeg" alt="Chicken Tikka">
+        <div class="food-body">
+          <h3>Chicken Tikka</h3>
+          <p class="desc">Juicy marinated chicken char-grilled to perfection.</p>
+          <p class="price">₹249</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="food-card">
+        <img src="./food photos/f3.jpeg" alt="Veg Biryani">
+        <div class="food-body">
+          <h3>Veg Biryani</h3>
+          <p class="desc">Aromatic basmati rice layered with vegetables and spices.</p>
+          <p class="price">₹159</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="food-card">
+        <img src="./food photos/f4.jpeg" alt="Dal Makhani">
+        <div class="food-body">
+          <h3>Dal Makhani</h3>
+          <p class="desc">Slow-cooked black lentils in a creamy, buttery sauce.</p>
+          <p class="price">₹149</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="food-card">
+        <img src="./food photos/f5.jpeg" alt="Masala Dosa">
+        <div class="food-body">
+          <h3>Masala Dosa</h3>
+          <p class="desc">Crispy rice crepe stuffed with spiced potato filling.</p>
+          <p class="price">₹119</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="food-card">
+        <img src="./food photos/f6.jpeg" alt="Idli Sambhar">
+        <div class="food-body">
+          <h3>Idli Sambhar</h3>
+          <p class="desc">Steamed rice cakes served with tangy sambar and chutney.</p>
+          <p class="price">₹99</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="food-card">
+        <img src="./food photos/f7.jpeg" alt="Pasta Alfredo">
+        <div class="food-body">
+          <h3>Pasta Alfredo</h3>
+          <p class="desc">Creamy white-sauce pasta tossed with parmesan.</p>
+          <p class="price">₹199</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="food-card">
+        <img src="./food photos/f8.jpeg" alt="Veggie Burger">
+        <div class="food-body">
+          <h3>Veggie Burger</h3>
+          <p class="desc">Grilled vegetable patty with fresh greens and sauce.</p>
+          <p class="price">₹149</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="food-card">
+        <img src="./food photos/f9.jpeg" alt="French Fries">
+        <div class="food-body">
+          <h3>French Fries</h3>
+          <p class="desc">Golden, crispy fries salted to perfection.</p>
+          <p class="price">₹89</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="food-card">
+        <img src="./food photos/f10.jpeg" alt="Margherita Pizza">
+        <div class="food-body">
+          <h3>Margherita Pizza</h3>
+          <p class="desc">Classic cheese pizza with fresh basil and tomato.</p>
+          <p class="price">₹269</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+
+      <!-- ⭐ CONTINUING ALL THE WAY TO 50 ⭐ -->
+
+      <!-- I will now add buttons to EVERY card below exactly matching your structure -->
+
+      <!-- 11 -->
+      <article class="food-card">
+        <img src="./food photos/f11.jpeg" alt="BBQ Chicken Pizza">
+        <div class="food-body">
+          <h3>BBQ Chicken Pizza</h3>
+          <p class="desc">Smoky BBQ chicken, onion & cheese on a crisp crust.</p>
+          <p class="price">₹349</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="food-card">
+        <img src="./food photos/f12.jpeg" alt="Ramen Bowl">
+        <div class="food-body">
+          <h3>Ramen Bowl</h3>
+          <p class="desc">Savory broth with noodles, egg and marinated pork/veg.</p>
+          <p class="price">₹299</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 13 -->
+      <article class="food-card">
+        <img src="./food photos/f13.jpeg" alt="Sushi Platter">
+        <div class="food-body">
+          <h3>Sushi Platter</h3>
+          <p class="desc">Assorted sushi rolls with fresh ingredients.</p>
+          <p class="price">₹399</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 14 -->
+      <article class="food-card">
+        <img src="./food photos/f14.jpeg" alt="Shawarma Roll">
+        <div class="food-body">
+          <h3>Shawarma Roll</h3>
+          <p class="desc">Shredded roasted meat wrapped with salad & sauces.</p>
+          <p class="price">₹169</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 15 -->
+      <article class="food-card">
+        <img src="./food photos/f15.jpeg" alt="Chicken Biryani">
+        <div class="food-body">
+          <h3>Chicken Biryani</h3>
+          <p class="desc">Fragrant biryani layered with tender chicken.</p>
+          <p class="price">₹249</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 16 -->
+      <article class="food-card">
+        <img src="./food photos/f16.jpeg" alt="Ghee Rice">
+        <div class="food-body">
+          <h3>Ghee Rice</h3>
+          <p class="desc">Aromatic rice cooked with pure ghee.</p>
+          <p class="price">₹139</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 17 -->
+      <article class="food-card">
+        <img src="./food photos/f17.jpeg" alt="Rajma Chawal">
+        <div class="food-body">
+          <h3>Rajma Chawal</h3>
+          <p class="desc">Comfort food made with red kidney beans.</p>
+          <p class="price">₹149</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 18 -->
+      <article class="food-card">
+        <img src="./food photos/f18.jpeg" alt="Chole Bhature">
+        <div class="food-body">
+          <h3>Chole Bhature</h3>
+          <p class="desc">Spicy chickpeas served with fluffy fried bread.</p>
+          <p class="price">₹159</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 19 -->
+      <article class="food-card">
+        <img src="./food photos/f19.jpeg" alt="Spring Rolls">
+        <div class="food-body">
+          <h3>Spring Rolls</h3>
+          <p class="desc">Crispy vegetable rolls with dipping sauce.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 20 -->
+      <article class="food-card">
+        <img src="./food photos/f20.jpeg" alt="Fried Rice">
+        <div class="food-body">
+          <h3>Fried Rice</h3>
+          <p class="desc">Rice stir-fried with veggies & sauce.</p>
+          <p class="price">₹139</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 21 -->
+      <article class="food-card">
+        <img src="./food photos/f21.jpeg" alt="Noodles">
+        <div class="food-body">
+          <h3>Noodles</h3>
+          <p class="desc">Stir-fried noodles tossed with sauces.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 22 -->
+      <article class="food-card">
+        <img src="./food photos/f22.jpeg" alt="Tandoori Chicken">
+        <div class="food-body">
+          <h3>Tandoori Chicken</h3>
+          <p class="desc">Marinated chicken cooked in clay oven.</p>
+          <p class="price">₹299</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 23 -->
+      <article class="food-card">
+        <img src="./food photos/f23.jpeg" alt="Manchurian">
+        <div class="food-body">
+          <h3>Manchurian</h3>
+          <p class="desc">Fried balls tossed in Indo-Chinese sauce.</p>
+          <p class="price">₹159</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 24 -->
+      <article class="food-card">
+        <img src="./food photos/f24.jpeg" alt="Tacos">
+        <div class="food-body">
+          <h3>Tacos</h3>
+          <p class="desc">Soft tortilla shells filled with toppings.</p>
+          <p class="price">₹189</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 25 -->
+      <article class="food-card">
+        <img src="./food photos/f25.jpeg" alt="Burrito Bowl">
+        <div class="food-body">
+          <h3>Burrito Bowl</h3>
+          <p class="desc">Rice bowl with beans, salsa & veggies.</p>
+          <p class="price">₹219</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 26 -->
+      <article class="food-card">
+        <img src="./food photos/f_nacho.jpeg" alt="Nachos">
+        <div class="food-body">
+          <h3>Nachos</h3>
+          <p class="desc">Crispy nachos topped with cheese & salsa.</p>
+          <p class="price">₹149</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 27 -->
+      <article class="food-card">
+        <img src="./food photos/f26.jpeg" alt="Kebabs">
+        <div class="food-body">
+          <h3>Kebabs</h3>
+          <p class="desc">Spiced meat grilled on skewers.</p>
+          <p class="price">₹229</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 28 -->
+      <article class="food-card">
+        <img src="./food photos/f27.jpeg" alt="Fish Curry">
+        <div class="food-body">
+          <h3>Fish Curry</h3>
+          <p class="desc">Coastal-style spicy fish curry.</p>
+          <p class="price">₹269</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 29 -->
+      <article class="food-card">
+        <img src="./food photos/f28.jpeg" alt="Grilled Sandwich">
+        <div class="food-body">
+          <h3>Grilled Sandwich</h3>
+          <p class="desc">Crispy toasted sandwich with fillings.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 30 -->
+      <article class="food-card">
+        <img src="./food photos/f29.jpeg" alt="Chocolate Cake">
+        <div class="food-body">
+          <h3>Chocolate Cake</h3>
+          <p class="desc">Moist and rich chocolate cake.</p>
+          <p class="price">₹199</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 31 -->
+      <article class="food-card">
+        <img src="./food photos/f30.jpeg" alt="Momos">
+        <div class="food-body">
+          <h3>Momos</h3>
+          <p class="desc">Soft dumplings with spicy chutney.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 32 -->
+      <article class="food-card">
+        <img src="./food photos/f31.jpeg" alt="Hot Chocolate">
+        <div class="food-body">
+          <h3>Hot Chocolate</h3>
+          <p class="desc">Warm creamy chocolate drink.</p>
+          <p class="price">₹99</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 33 -->
+      <article class="food-card">
+        <img src="./food photos/f32.jpeg" alt="Fruit Bowl">
+        <div class="food-body">
+          <h3>Fruit Bowl</h3>
+          <p class="desc">Fresh seasonal fruits served chilled.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 34 -->
+      <article class="food-card">
+        <img src="./food photos/f33.jpeg" alt="Omelette">
+        <div class="food-body">
+          <h3>Omelette</h3>
+          <p class="desc">Fluffy omelette with veggies.</p>
+          <p class="price">₹79</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 35 -->
+      <article class="food-card">
+        <img src="./food photos/f34.jpeg" alt="Chicken Curry">
+        <div class="food-body">
+          <h3>Chicken Curry</h3>
+          <p class="desc">Classic spicy chicken curry.</p>
+          <p class="price">₹199</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 36 -->
+      <article class="food-card">
+        <img src="./food photos/f35.jpeg" alt="Paneer Tikka">
+        <div class="food-body">
+          <h3>Paneer Tikka</h3>
+          <p class="desc">Char-grilled paneer with spices.</p>
+          <p class="price">₹179</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 37 -->
+      <article class="food-card">
+        <img src="./food photos/f36.jpeg" alt="Club Sandwich">
+        <div class="food-body">
+          <h3>Club Sandwich</h3>
+          <p class="desc">Three layers of delicious fillings.</p>
+          <p class="price">₹159</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 38 -->
+      <article class="food-card">
+        <img src="./food photos/f37.jpeg" alt="Ice Cream Sundae">
+        <div class="food-body">
+          <h3>Ice Cream Sundae</h3>
+          <p class="desc">Ice cream topped with sauce & nuts.</p>
+          <p class="price">₹119</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 39 -->
+      <article class="food-card">
+        <img src="./food photos/f38.jpeg" alt="Garlic Bread">
+        <div class="food-body">
+          <h3>Garlic Bread</h3>
+          <p class="desc">Toasted bread with garlic and herbs.</p>
+          <p class="price">₹89</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 40 -->
+      <article class="food-card">
+        <img src="./food photos/f39.jpeg" alt="Steak">
+        <div class="food-body">
+          <h3>Steak</h3>
+          <p class="desc">Perfectly grilled juicy steak.</p>
+          <p class="price">₹499</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 41 -->
+      <article class="food-card">
+        <img src="./food photos/f40.jpeg" alt="Salad Bowl">
+        <div class="food-body">
+          <h3>Salad Bowl</h3>
+          <p class="desc">Fresh greens with dressing.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 42 -->
+      <article class="food-card">
+        <img src="./food photos/f41.jpeg" alt="Falafel Wrap">
+        <div class="food-body">
+          <h3>Falafel Wrap</h3>
+          <p class="desc">Crispy falafels wrapped in pita.</p>
+          <p class="price">₹149</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 43 -->
+      <article class="food-card">
+        <img src="./food photos/f42.jpeg" alt="Pav Bhaji">
+        <div class="food-body">
+          <h3>Pav Bhaji</h3>
+          <p class="desc">Spicy mashed veggies with pav.</p>
+          <p class="price">₹139</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 44 -->
+      <article class="food-card">
+        <img src="./food photos/f43.jpeg" alt="Upma">
+        <div class="food-body">
+          <h3>Upma</h3>
+          <p class="desc">South Indian savory semolina.</p>
+          <p class="price">₹89</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 45 -->
+      <article class="food-card">
+        <img src="./food photos/f44.jpeg" alt="Poha">
+        <div class="food-body">
+          <h3>Poha</h3>
+          <p class="desc">Light flattened rice with spices.</p>
+          <p class="price">₹79</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 46 -->
+      <article class="food-card">
+        <img src="./food photos/f45.jpeg" alt="Egg Fried Rice">
+        <div class="food-body">
+          <h3>Egg Fried Rice</h3>
+          <p class="desc">Stir-fried rice with eggs & veggies.</p>
+          <p class="price">₹139</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 47 -->
+      <article class="food-card">
+        <img src="./food photos/f46.jpeg" alt="Veg Thali">
+        <div class="food-body">
+          <h3>Veg Thali</h3>
+          <p class="desc">Complete vegetarian meal platter.</p>
+          <p class="price">₹249</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 48 -->
+      <article class="food-card">
+        <img src="./food photos/f47.jpeg" alt="Chicken Wings">
+        <div class="food-body">
+          <h3>Chicken Wings</h3>
+          <p class="desc">Hot & crispy chicken wings.</p>
+          <p class="price">₹199</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 49 -->
+      <article class="food-card">
+        <img src="./food photos/f48.jpeg" alt="Brownie">
+        <div class="food-body">
+          <h3>Brownie</h3>
+          <p class="desc">Rich fudgy chocolate brownie.</p>
+          <p class="price">₹99</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- 50 -->
+      <article class="food-card">
+        <img src="./food photos/f49.jpeg" alt="Pancakes">
+        <div class="food-body">
+          <h3>Pancakes</h3>
+          <p class="desc">Fluffy pancakes with syrup & berries.</p>
+          <p class="price">₹129</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+</body>
+</html>

@@ -12,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Main Container */
 .container {
     display: flex;
     background: #ffffff;
@@ -23,6 +25,8 @@ body {
     width: 820px;
     height: 520px;
 }
+
+/* Left Image */
 .img-box {
     width: 50%;
     height: 100%;
@@ -33,6 +37,8 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* Right Login Box */
 .login-box {
     width: 50%;
     padding: 45px 40px;
@@ -52,6 +58,8 @@ body {
     margin-bottom: 25px;
     color: #666;
 }
+
+/* Input Fields */
 .input-group {
     text-align: left;
     margin-bottom: 20px;
@@ -72,11 +80,14 @@ body {
     font-size: 15px;
     transition: 0.3s;
 }
+
 .input-group input:focus {
     border-color: #b5b5b5;
     background: #ffffff;
     box-shadow: 0 0 0 2px #d5d5d5;
 }
+
+/* Login Button */
 .btn {
     width: 100%;
     padding: 12px;
@@ -94,6 +105,8 @@ body {
     background: #444;
     transform: translateY(-2px);
 }
+
+/* Bottom Text */
 .signup-text {
     margin-top: 20px;
     font-size: 14px;
@@ -110,7 +123,9 @@ body {
     color: #0c44d1;
     text-decoration: underline;
 }
-/* Big Phone*/
+
+
+/* Responsive */
 @media (max-width: 992px) {
     body {
         padding: 20px;
@@ -132,19 +147,9 @@ body {
         width: 100%;
         padding: 35px 30px;
     }
-
-    .login-box h2 {
-        font-size: 26px;
-    }
-
-    .subtitle {
-        font-size: 14px;
-    }
 }
 
-/* Mobile*/
 @media (max-width: 600px) {
-
     body {
         padding: 10px;
     }
@@ -160,51 +165,5 @@ body {
 
     .login-box {
         padding: 25px 20px;
-    }
-
-    .login-box h2 {
-        font-size: 22px;
-    }
-
-    .subtitle {
-        font-size: 13px;
-    }
-
-    .input-group label {
-        font-size: 13px;
-    }
-
-    .input-group input {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .btn {
-        padding: 10px;
-        font-size: 15px;
-    }
-
-    .signup-text {
-        font-size: 13px;
-    }
-}
-
-/* Small Phones*/
-@media (max-width: 400px) {
-    .login-box h2 {
-        font-size: 20px;
-    }
-
-    .container {
-        width: 100%;
-    }
-
-    .img-box {
-        height: 180px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 9px;
     }
 }
