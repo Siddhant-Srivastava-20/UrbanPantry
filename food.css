@@ -94,6 +94,18 @@ body {
 .add-cart-btn:active {
   transform: scale(0.95);
 }
+.food-card.selected {
+  background: linear-gradient(180deg, #fffaf0, #fff3e0); 
+  border-color: #ffd7a8;
+  box-shadow: 0 12px 30px rgba(255, 147, 40, 0.12);
+  transform: translateY(-6px);
+  transition: all 0.22s ease;
+}
+.food-card:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 147, 40, 0.12);
+  transform: translateY(-4px);
+}
 
 @media (max-width: 760px) {
   .food-header h1 {
